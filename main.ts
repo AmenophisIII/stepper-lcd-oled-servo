@@ -3,7 +3,7 @@ input.onButtonPressed(Button.A, function () {
     I2C_LCD1602.ShowString("Let's go !", 0, 1)
     OLED12864_I2C.showString(
     0,
-    1,
+    2,
     "Let's go !",
     1
     )
@@ -31,6 +31,12 @@ OLED12864_I2C.showString(
 0,
 0,
 "Hi Jack!",
+1
+)
+OLED12864_I2C.showString(
+0,
+1,
+"push A button",
 1
 )
 motor = stepperMotor.createMotor(
