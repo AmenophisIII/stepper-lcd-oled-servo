@@ -33,6 +33,13 @@ OLED12864_I2C.showString(
 "Hi Jack!",
 1
 )
+basic.pause(1000)
+OLED12864_I2C.showString(
+0,
+30,
+"push A button",
+1
+)
 motor = stepperMotor.createMotor(
 DigitalPin.P1,
 DigitalPin.P2,
